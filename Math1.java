@@ -16,6 +16,9 @@ class Calculator {
    int divide(int a , int b) {
     return a / b;
     }
+  // METHOD OVERRIDING -- POLYMORPHISM
+    double divide(double a, double b) {
+        return a / b;
 
     int modulo(int a, int b) {
         return a % b;
@@ -37,5 +40,6 @@ public class Math1 {
         System.out.println(calc.divide(42, 7));
         System.out.println(calc.divide(42, 6));
         System.out.println(calc.modulo(10, 4));
+        System.out.println(calc.divide(10.36, 5.43));
     }
 }
