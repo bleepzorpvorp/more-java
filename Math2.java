@@ -2,6 +2,11 @@ class ScoreBoard {
     int playerXP = 0;
     int  playerLevel = 0;
     int playerHealth = 100;
+    String playerUsername = "";
+
+    public void ScoreBoard(String username) {
+        playerUsername = username;
+    }
     void gameName() {
         System.out.println("Barack Obama");
     }
@@ -28,6 +33,17 @@ public class Math2 {
         
         ScoreBoard title = new ScoreBoard();
         title.gameName();
+        ScoreBoard barackObama67 = new ScoreBoard();
+        barackObama67.gainXP(67);
+        barackObama67.gainXP(67);
+        System.out.println("BarackObama67 XP: " + barackObama67.playerXP);
+        barackObama67.damage();
+        barackObama67.heal();
+        barackObama67.levelUp();
+        barackObama67.levelUp();
+        barackObama67.levelDown();
+        System.out.println("BarackObama67 Health: " + barackObama67.playerHealth);
+        System.out.println("BarackObama67 Level: " + barackObama67.playerLevel);
         ScoreBoard player1 = new ScoreBoard();
         ScoreBoard player2 = new ScoreBoard();
         player1.gainXP(67);
