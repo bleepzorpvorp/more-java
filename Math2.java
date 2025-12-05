@@ -5,7 +5,6 @@ class ScoreBoard {
     void gameName() {
         System.out.println("Barack Obama");
     }
-
     void gainXP(int amount) {
         playerXP = playerXP + amount; // accumulation, long way of doing it
     }
@@ -23,8 +22,10 @@ class ScoreBoard {
         playerLevel--; 
     }
 }
+
 public class Math2 {
     public  static void main(String[] args) {
+        
         ScoreBoard title = new ScoreBoard();
         title.gameName();
         ScoreBoard player1 = new ScoreBoard();
