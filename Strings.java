@@ -1,0 +1,32 @@
+
+public class Strings {
+    public static void main(String[] args) {
+        String nameObj = new String("Didi");
+        //D i d i 
+        //0 1 2 3
+        String name1 = "Didi";
+        String name2 = "Gogo";
+        String name3 = "Gogo";
+        //First line will be false
+        System.out.println("name1 and nameObj: " + (name1 == nameObj));
+        System.out.println("name1 and nameObj: " + name1.equals(nameObj));
+        System.out.println("name1.equals(name2): " + name1.equals(name2));
+        System.out.println("name2 and name3: " + (name2 == name3));
+        //compareTo
+        System.out.println("Compare: " + name1.compareTo(name2));
+        System.out.println("Compare: " + name2.compareTo(name3));
+        //HELPFUL BUILT IN METHODS
+        System.out.println("# of chars in string: " name1.length());
+        System.out.println("Index select: " + name2.indexOf("o")); //Experiment with this
+        System.out.println("Character select: " + name2.charAt(2));        
+        String quote = "Talk is cheap, show me the code.";
+        String result1 = quote.substring(15);
+        String result2 = quote.substring(5,13);
+        System.out.println("Full quote: " + quote);
+        System.out.println("Substring1: " + result1);
+        System.out.println("Substring2: " + result2);
+
+
+
+    }
+}
