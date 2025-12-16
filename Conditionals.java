@@ -71,15 +71,32 @@ public class Conditionals {
                 System.out.println("Access denied.");
             }
             System.out.println("Enter a number");
-            int num5 = input.nextLine();
-            if 
-input.close();
+            int num5 = input.nextInt();
+            if (num5 % 2 == 0) {
+                System.out.println(num5 + " is an even number.");
+        } else {
+            System.out.println(num5 + " is an odd number.");
+        }
 
+        System.out.print("Enter an integer grade (0-100): ");
+        String letterGrade;
+        int grade = input.nextInt();
 
+        if (grade >= 90 && grade <= 100) {
+            letterGrade = "A";
+        } else if (grade >= 80) {
+            letterGrade = "B";
+        } else if (grade >= 70) {
+            letterGrade = "C";
+        } else if (grade >= 60) {
+            letterGrade = "D";
+        } else if (grade >= 0) {
+            letterGrade = "F";
+        } else {
+            letterGrade = "Invalid Grade";
+        }
 
-
-
+        System.out.println("The letter grade is: " + letterGrade);
+        input.close();
     }
-
-    
 }
