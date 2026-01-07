@@ -1,3 +1,4 @@
+package fundamentals;
 // java is a STRONGLY TYPED language; you have to DEFINE/DECLARE a variable
 // you have to declare its DATA TYPE
 class DataTypeExamples{

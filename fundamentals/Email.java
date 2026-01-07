@@ -1,3 +1,4 @@
+package fundamentals;
 import java.util.Scanner;
 public class Email {
         public static void main(String[] args) {

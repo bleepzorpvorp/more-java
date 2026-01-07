@@ -1,3 +1,4 @@
+package fundamentals;
 class Calculator {
     //write functions for addition, subtraction, multiplication, division, etc
     int add(int a, int b) {

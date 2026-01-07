@@ -1,3 +1,4 @@
+package fundamentals;
 class ScoreBoard {
     int playerXP = 0;
     int  playerLevel = 0;

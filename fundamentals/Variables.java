@@ -1,3 +1,4 @@
+package fundamentals;
 // Two types of variables: instance variables and static variables
 // variables use camelCase
 // constants use uppercase

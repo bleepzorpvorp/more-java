@@ -1,3 +1,4 @@
+package fundamentals;
 import java.util.Scanner;
 public class DoubleConversion {
     public static void main(String[] args) {
