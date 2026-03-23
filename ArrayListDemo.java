@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ArrayListDemo {
+public class ArrayListDemo { //copied from csaea github since i wasnt there or notes
 
 	public static void main(String[] args) {
 
@@ -78,25 +78,22 @@ public class ArrayListDemo {
 		// Create a arraylist with 10 random numbs
 		// and remove all odds
 ArrayList<Integer> odds = new ArrayList<>(10);
-Random object = new Random();
-int max = Integer.MAX_VALUE;
-for (int i = 0; i < 11; i++) {
-	int rand = object.nextLint(0, max);
+Random random = new Random();
+for (int i = 0; i < 10; i++) {
+	odds.add(random.nextInt(10));
 }
-	for(int i = 0; i < 11; i++) {
-		int remainder = i % 2;
-		if (remainder == 1) {
-			odds.remove(i);
-		}
-		else if (remainder == 0) {
-			return i
-		}
+	System.out.println("da og list" + odds);
+for (int i = 0; i < odds.size(); i++) {
+	if (odds.get(i) % 2 != 0) {
+		odds.remove(i);
+		i--;
 	}
-	System.out.println(odds);
+	System.out.println("List:" + odds);
+}
 		// make a guest list that allows the user to enter names
 		// if the name exist tell the use "this person is invited"
 		// continue until you type exit
-ArrayList<Integer> people = new ArrayList<>();
+ArrayList<String> people = new ArrayList<>();
 people.add("Damon Albarn");
 people.add("Graham Coxon");
 people.add("Alex James");
@@ -105,11 +102,11 @@ people.add("Jarvis Cocker");
 people.add("Liam Gallagher");
 people.add("Noel Gallagher");
 Scanner input = new Scanner(System.in);
-while (input == true) {
+while (true) {
 	System.out.println("Enter a name or exit: ");
 	String person = input.nextLine();
 	if (person.equals("exit")) {
-		break
+		break;
 	}
 	if (people.contains(person)) {
 		System.out.println("this person is invited yo");
@@ -120,7 +117,28 @@ while (input == true) {
 		// Create a list of grocery items
 		// if the user types in a food item print its index
 		// if not print "Not found" and add it to the list
+ArrayList<String> food = new ArrayList<>();
+food.add("chicken");
+food.add("milk");
+food.add("eggs");
+food.add("lettuce");
+food.add("salmon");
+Scanner scan = new Scanner(System.in);
+while (true) {
+	System.out.print("Enter food:");
+	String foodList = scan.nextLine();
+	if (foodList.equals("exit")) {
+		break;
+	}
+	if (food.contains(foodList)) {
+		int index = food.indexOf(foodList);
+		System.out.println("Index:" + index);
 
+	} else {
+		System.out.println("Not found in list");
+		food.add(foodList);
+	}
+}
 	}
 
 }
