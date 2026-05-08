@@ -10,6 +10,10 @@ public class Sorting {
         System.out.println("Before Swap: " + Arrays.toString(swapNumbers));
         swap.swapNumbers();
         System.out.println("After Swap: " + Arrays.toString(swapNumbers));
+        int[] selectionNumbers = {9, 3, 1, 5, 10, 2, 4, 8, 7, 6};
+        SortingAlgorithms selection = new SortingAlgorithms(selectionNumbers);
+        selection.selectionShort();
+        System.outprintln("Selection Sort:" + Arrays.toString(selectionNumbers));
 
     }
 }
